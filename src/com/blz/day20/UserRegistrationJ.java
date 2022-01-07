@@ -54,4 +54,11 @@ public class UserRegistrationJ {
 		return matcher.matches();
 
 	}
+
+	public boolean passwordRule4(String password) {
+		String regex = "^[0-9a-zA-Z!,@#$&*().]{8,}$";
+		Pattern pattern = Pattern.compile(regex);
+		Matcher matcher = pattern.matcher(password);
+		return matcher.matches();
+	}
 }
