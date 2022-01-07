@@ -80,19 +80,19 @@ public class UserRegistrationJTest {
 
 	@Test
 	public void givenPasswordRule3_WhenProper_ShouldReturnTrue() {
-		boolean result = userRegistration.passwordRule3("rajendra@123");
+		boolean result = userRegistration.passwordRule3("sandipan@123");
 		Assert.assertEquals(true, result);
 	}
 
 	@Test
 	public void givenPasswordRule3_WhenNotProper_ShouldReturnFalse() {
-		boolean result = userRegistration.passwordRule3("rajendra@gn");
+		boolean result = userRegistration.passwordRule3("sandip@gn");
 		Assert.assertEquals(false, result);
 	}
 
 	@Test
 	public void givenPasswordRule4_WhenProper_ShouldReturnTrue() {
-		boolean result = userRegistration.password("rajendra@123");
+		boolean result = userRegistration.password("sandipan@123");
 		Assert.assertEquals(true, result);
 	}
 
